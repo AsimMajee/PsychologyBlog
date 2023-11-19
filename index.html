@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&display=swap" rel="stylesheet" />
+  <title>The Psychology Blog</title>
+  <style>
+    body {
+      font-family: "Lexend", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #333;
+      color: #000000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .header-text {
+      color: #000000;
+      text-shadow: 0px 0px 3px white;
+    }
+
+    nav {
+      background-color: #ffffff;
+      overflow: hidden;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      padding: 0 0.5rem;
+      justify-self: center;
+      justify-content: space-between;
+    }
+
+    nav a {
+      /* display: inline-block; */
+      color: #495057;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 20px;
+      transition: padding 0.3s, color 0.3s;
+      /* flex-grow: 1;  */
+      /* Distribute available space equally among links */
+    }
+
+    nav a:hover {
+      padding: 25px 16px;
+      color: #007bff;
+    }
+
+    nav img {
+      height: 60px;
+      margin-right: 20px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-name {
+      line-height: 60px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    #landing {
+      height: 100vh;
+      background-image: url("./images/brain.jpg");
+      background-size: cover;
+      background-position: center;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 20px;
+      /* margin-top: 60px; */
+    }
+
+    #landing h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      text-shadow: 0px 0px 7px white;
+    }
+
+    #landing p {
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+
+    section {
+      padding: 40px 0;
+      /* Increased vertical spacing */
+    }
+
+    #about {
+      text-align: center;
+      /* Center the text in the middle */
+    }
+
+    .about-card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .about-card {
+      width: 30%;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      background-color: #f0e6ef;
+      margin: 20px;
+    }
+
+    .about-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .read-more a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      display: inline-block;
+      /* Added to ensure proper spacing */
+    }
+
+    .read-more a:hover {
+      color: #0056b3;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <script src="animation.js"></script>
+</head>
+
+<body>
+  <nav style="border: 1px solid black">
+    <div style="display: flex; align-items: center">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/the-psychological-corporation-logo-svg-vector.svg"
+        alt="Logo" />
+      <div class="site-name">The Psychology Blog</div>
+    </div>
+    <div style="display: flex; align-items: center; padding-right: 1rem">
+      <a href="index.html">Home</a>
+      <a href="#about">Blogs</a>
+    </div>
+  </nav>
+
+  <div id="landing">
+    <h2 style="max-width: 1000px; padding: 0 3rem">
+      Impact of advancement in Technology on Cognitive Processes
+    </h2>
+
+    <div class="header-text">Exploring the depths of the human mind.</div>
+  </div>
+
+  <section style="margin-bottom: 3rem" id="about">
+    <h2><u>About Section</u></h2>
+    <div class="about-card-container">
+      <div class="about-card">
+        <img src="./images/books.jpg" alt="Image 1" />
+        <div class="about-content">
+          <h3>
+            Embracing the Analog Renaissance: Nurturing Learning and Memory
+            Through Tangible Tools in this Digital Era
+          </h3>
+          <p>
+            In the fast-paced digital age, where screens dominate our daily
+            lives....
+          </p>
+          <div class="read-more">
+            <a href="Page2.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <img src="./images/gadgets.jpg" alt="Image 2" />
+        <div class="about-content">
+          <h3>
+            Tech Symphony: Amplifying Learning and Memory in the Digital Age
+          </h3>
+          <p>
+            In a world where physical tools have long been our go-to for
+            learning and memory....
+          </p>
+          <div class="read-more">
+            <a href="Page3.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>&copy; 2023 Our Psychology Website. All rights reserved.</footer>
+</body>
+
+</html>
